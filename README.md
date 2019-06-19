@@ -16,7 +16,7 @@ If you use IntelliJ IDEA use new -> Project From Version Control -> Git and past
     -	count(): return the size of the set
     -	union(Set a , Set b): union and return a new set
     -	intersection(set a , set b): intersection and return a new set
-    -	difference(set a , set b): intersection and return a new set
+    -	difference(set a , set b): difference and return a new set
     -	symmetric difference (set a , set b): symmetric difference and return a new set
 ##	Note:
 -	Due to the class is written purely for learning purpose so very little Exception handle is expected 
