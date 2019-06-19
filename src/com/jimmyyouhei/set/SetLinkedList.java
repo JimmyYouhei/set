@@ -1,17 +1,18 @@
 package com.jimmyyouhei.set;
 
-import java.util.DuplicateFormatFlagsException;
 import java.util.LinkedList;
-import java.util.Set;
 
 public class SetLinkedList {
 
+    // Linked List a base for the set
     LinkedList<Integer> mLinkedList = new LinkedList<>();
 
+    // method to check if the set contain the element
     public boolean contains(int n){
         return mLinkedList.contains(n);
     }
 
+    // add method if already present will throw Duplication Exception
     public void add(int n) throws DuplicationException{
         if (!mLinkedList.contains(n)){
             mLinkedList.add(n);
@@ -20,20 +21,24 @@ public class SetLinkedList {
         }
     }
 
+    // method to remove the int
     public void remove (int n){
         mLinkedList.remove((Object)n);
     }
 
+    // return the size of the set
     public int count (){
         return mLinkedList.size();
     }
 
+    // print out all element
     public void print(){
         for (int n : mLinkedList){
             System.out.println(n);
         }
     }
 
+    // union method of set and return a new set
     public static SetLinkedList union (SetLinkedList a , SetLinkedList b){
         SetLinkedList result = new SetLinkedList();
 
@@ -59,6 +64,7 @@ public class SetLinkedList {
 
     }
 
+    // intersection method and return a new set
     public static SetLinkedList intersection(SetLinkedList a , SetLinkedList b){
         SetLinkedList result = new SetLinkedList();
 
@@ -75,6 +81,7 @@ public class SetLinkedList {
         return result;
     }
 
+    // difference method and return an new set
     public static SetLinkedList difference(SetLinkedList a , SetLinkedList b){
         SetLinkedList result = new SetLinkedList();
 
@@ -91,6 +98,7 @@ public class SetLinkedList {
         return result;
     }
 
+    // Symmetric Difference method and return a new set
     public static SetLinkedList symmetricDifference (SetLinkedList a , SetLinkedList b){
         SetLinkedList result = new SetLinkedList();
 
