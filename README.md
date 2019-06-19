@@ -21,6 +21,6 @@ If you use IntelliJ IDEA use new -> Project From Version Control -> Git and past
 ##	Note:
 -	Due to the class is written purely for learning purpose so very little Exception handle is expected 
 -	The DuplicationException class is written to make a custom exception to reflect the proper name of the exception
--	The add method when duplication is detected,  use exception instead of using return false for Boolean like the set in java. This is intended and to practice throwing and handle exception at a same time
+-	The add method when duplication is detected,  use exception instead of using return false like the set in java. This is intended to practice throwing and handle exception at a same time
 ##	License 
 [MIT License](https://github.com/JimmyYouhei/set/blob/master/LICENSE)
